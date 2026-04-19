@@ -1,0 +1,28 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+numReplicas = 2
+restartPolicyMaxRetries = 3
+restartPolicyMaxRetryDuration = 600
+healthchecks = { enabled = true }
+
+[[services]]
+name = "api"
+image = "nexocourses-backend"
+builder = "dockerfile"
+
+  [services.ports]
+  port = 3000
+
+  [[services.volumes]]
+  mountPath = "/tmp"
+  name = "tmp"
+
+  [services.variables]
+  NODE_ENV = "production"
+  LOG_LEVEL = "info"
+
+# PostgreSQL for Supabase (managed separately)
+# Redis for Bull queue (managed separately)
