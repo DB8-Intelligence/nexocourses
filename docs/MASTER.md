@@ -262,4 +262,5 @@ Escolher um dos caminhos antes de continuar:
 - ⚠️ Descoberto via typecheck: template tem 8 erros TS pré-existentes (não causados pelo fix). Viraram Bloqueio #4 — resolver antes do primeiro deploy.
 - ✅ 8 erros TS do template resolvidos (ver Bloqueio #4). `npm run typecheck` passa limpo.
 - ✅ Git inicializado, `.gitignore` raiz criado excluindo `*.tar.gz`, `.claude/settings.local.json`, `node_modules/`, `.env.local`.
-- ⏸️ PAUSA: Douglas está focado em outro projeto; NexoCourses entra em parking aguardando. Próxima retomada = criar repo GitHub `DB8-Intelligence/nexocourses` + push do commit inicial + seguir bloqueios #1/#2/#3.
+- ✅ Repo GitHub criado: https://github.com/DB8-Intelligence/nexocourses (commit inicial `e106d9d` pushed). Remote origin usa HTTPS (SSH deu host key error).
+- ⏸️ PAUSA: Douglas está focado em outro projeto; NexoCourses entra em parking aguardando. Próxima retomada = seguir bloqueios #1/#2/#3 (credenciais Supabase, Anthropic, service Railway).
